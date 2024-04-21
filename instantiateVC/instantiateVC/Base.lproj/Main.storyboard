@@ -64,10 +64,14 @@
                         <constraints>
                             <constraint firstItem="lrb-pl-odP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="254" id="8EK-ux-Zoj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iiX-8D-8Vb" secondAttribute="trailing" constant="46" id="CHD-hf-8qO"/>
+                            <constraint firstItem="2wX-qW-PGf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="431" id="EI8-Bo-Pmd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2wX-qW-PGf" secondAttribute="bottom" constant="274" id="HUU-XN-cfg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lrb-pl-odP" secondAttribute="trailing" constant="103" id="Khc-9N-pQF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lrb-pl-odP" secondAttribute="bottom" constant="444.32999999999998" id="Og1-Wh-SCT"/>
                             <constraint firstItem="lrb-pl-odP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="bzi-we-4ml"/>
+                            <constraint firstItem="iiX-8D-8Vb" firstAttribute="leading" secondItem="2wX-qW-PGf" secondAttribute="trailing" constant="107" id="csF-1c-bme"/>
                             <constraint firstItem="2wX-qW-PGf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="eiI-B8-aIj"/>
+                            <constraint firstItem="iiX-8D-8Vb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="431" id="hZL-F8-YYq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iiX-8D-8Vb" secondAttribute="bottom" constant="274" id="j8f-D1-w0p"/>
                         </constraints>
                     </view>
@@ -84,9 +88,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQE-yc-w7i">
-                                <rect key="frame" x="175" y="416" width="31" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQE-yc-w7i">
+                                <rect key="frame" x="181" y="397" width="31" height="58"/>
                                 <attributedString key="attributedText">
                                     <fragment content="0">
                                         <attributes>
@@ -101,6 +104,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PVz-wm-BIu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yQE-yc-w7i" firstAttribute="centerY" secondItem="vtU-1i-FTK" secondAttribute="centerY" id="DMb-hE-Cnm"/>
+                            <constraint firstItem="yQE-yc-w7i" firstAttribute="centerX" secondItem="vtU-1i-FTK" secondAttribute="centerX" id="DkI-7K-WAd"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="yQE-yc-w7i" id="N9x-vf-NEp"/>
