@@ -21,10 +21,12 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func nextButton(_ sender: Any) {
-        let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        secondVC.receivedCount = self.count
-        self.present(secondVC, animated: true, completion: nil)
+        if let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController {
+            secondVC.receivedCount = self.count
+            self.present(secondVC, animated: true, completion: nil) } else {
+                // Handle the case where the view controller instantiation fails
+                print("Failed to instantiate SecondViewController")
+                
+            }
     }
 }
-
-
