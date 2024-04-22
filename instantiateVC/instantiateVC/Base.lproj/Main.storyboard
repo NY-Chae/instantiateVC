@@ -58,23 +58,43 @@
                                     <action selector="incrementButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZzX-7s-F0h"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-2n-8zc">
+                                <rect key="frame" x="181" y="187" width="31" height="58"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <color key="NSColor" red="0.071077641752577359" green="0.071077641752577359" blue="0.071077641752577359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="kL9-2n-8zc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="181" id="2of-jh-25P"/>
                             <constraint firstItem="lrb-pl-odP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="254" id="8EK-ux-Zoj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iiX-8D-8Vb" secondAttribute="trailing" constant="46" id="CHD-hf-8qO"/>
                             <constraint firstItem="2wX-qW-PGf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="431" id="EI8-Bo-Pmd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2wX-qW-PGf" secondAttribute="bottom" constant="274" id="HUU-XN-cfg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lrb-pl-odP" secondAttribute="trailing" constant="103" id="Khc-9N-pQF"/>
+                            <constraint firstItem="kL9-2n-8zc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="128" id="LEy-Yd-dha"/>
+                            <constraint firstItem="lrb-pl-odP" firstAttribute="top" secondItem="kL9-2n-8zc" secondAttribute="bottom" constant="68" id="LiG-gZ-cip"/>
                             <constraint firstAttribute="bottomMargin" secondItem="lrb-pl-odP" secondAttribute="bottom" constant="444.32999999999998" id="Og1-Wh-SCT"/>
                             <constraint firstItem="lrb-pl-odP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="bzi-we-4ml"/>
                             <constraint firstItem="iiX-8D-8Vb" firstAttribute="leading" secondItem="2wX-qW-PGf" secondAttribute="trailing" constant="107" id="csF-1c-bme"/>
                             <constraint firstItem="2wX-qW-PGf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="eiI-B8-aIj"/>
                             <constraint firstItem="iiX-8D-8Vb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="431" id="hZL-F8-YYq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iiX-8D-8Vb" secondAttribute="bottom" constant="274" id="j8f-D1-w0p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kL9-2n-8zc" secondAttribute="trailing" constant="181" id="uuN-XK-sZy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="kL9-2n-8zc" id="SNb-d7-Dqv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
